@@ -13,6 +13,7 @@ gem 'sdoc',           '~> 0.4.0', group: :doc
 gem 'haml',           '~> 4.0.6'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
