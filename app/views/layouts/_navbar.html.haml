@@ -18,7 +18,12 @@
         %li
           %a{:href => "#"} Recipes
       %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#"} Log In
-        %li
-          %a{:href => "#"} Sign Up
+        - if user_signed_in?
+          %li
+            = link_to "Sign Out", destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to "Log In", new_user_session_path
+          %li
+            = link_to "Sign Up", new_user_registration_path
+
