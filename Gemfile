@@ -16,8 +16,15 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'devise'
 
 group :development, :test do
-  gem 'byebug'
-  gem 'web-console',  '~> 2.0'
-  gem 'spring'
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'database_cleaner'
+  gem 'guard-rspec'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'selenium-webdriver', '~> 2.44.0'
+  gem 'capybara', '2.4.4'
+  gem 'factory_girl_rails', '4.5.0'
 end
 
